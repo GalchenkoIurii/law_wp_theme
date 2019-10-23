@@ -1,2 +1,2 @@
-# law_wp_theme
+# LawWPTheme
 WordPress Theme for lawyers
