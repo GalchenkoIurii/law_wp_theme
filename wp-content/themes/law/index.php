@@ -36,7 +36,7 @@
 	<meta name="twitter:url" content="" />
 	<meta name="twitter:card" content="" />
 
-
+    <?php wp_head(); ?>
 	</head>
 	<body>
 
@@ -79,42 +79,39 @@
 	<aside id="fh5co-hero" class="js-fullheight">
 		<div class="flexslider js-fullheight">
 			<ul class="slides">
-		   	<li style="background-image: url(images/img_bg_1.jpg);">
+		   	<li style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/img_bg_1.jpg);">
 		   		<div class="overlay-gradient"></div>
 		   		<div class="container">
 		   			<div class="row">
 			   			<div class="col-md-8 col-md-offset-2 text-center js-fullheight slider-text">
 			   				<div class="slider-text-inner">
 			   					<h1>Expert Legal Solutions</h1>
-									<h2>Free html5 templates Made by <a href="http://freehtml5.co/" target="_blank">freehtml5.co</a></h2>
 									<p><a class="btn btn-primary btn-lg" href="#">Make An Appointment</a></p>
 			   				</div>
 			   			</div>
 			   		</div>
 		   		</div>
 		   	</li>
-		   	<li style="background-image: url(images/img_bg_2.jpg);">
+		   	<li style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/img_bg_2.jpg);">
 		   		<div class="overlay-gradient"></div>
 		   		<div class="container">
 		   			<div class="row">
 			   			<div class="col-md-8 col-md-offset-2 text-center js-fullheight slider-text">
 			   				<div class="slider-text-inner">
 			   					<h1>Business Law</h1>
-									<h2>Free html5 templates Made by <a href="http://freehtml5.co/" target="_blank">freehtml5.co</a></h2>
 									<p><a class="btn btn-primary btn-lg btn-learn" href="#">Make An Appointment</a></p>
 			   				</div>
 			   			</div>
 			   		</div>
 		   		</div>
 		   	</li>
-		   	<li style="background-image: url(images/img_bg_3.jpg);">
+		   	<li style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/img_bg_3.jpg);">
 		   		<div class="overlay-gradient"></div>
 		   		<div class="container">
 		   			<div class="row">
 			   			<div class="col-md-8 col-md-offset-2 text-center js-fullheight slider-text">
 			   				<div class="slider-text-inner">
 			   					<h1>Defend Your Constitutional Right with Legal Help</h1>
-									<h2>Free html5 templates Made by <a href="http://freehtml5.co/" target="_blank">freehtml5.co</a></h2>
 									<p><a class="btn btn-primary btn-lg btn-learn" href="#">Make An Appointment</a></p>
 			   				</div>
 			   			</div>
@@ -153,7 +150,7 @@
 	</div>
 
 	<div id="fh5co-content">
-		<div class="video fh5co-video" style="background-image: url(images/video.jpg);">
+		<div class="video fh5co-video" style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/video.jpg);">
 			<a href="https://vimeo.com/channels/staffpicks/93951774" class="popup-vimeo"><i class="icon-video2"></i></a>
 			<div class="overlay"></div>
 		</div>
@@ -279,37 +276,37 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-4 col-sm-6 text-center fh5co-project animate-box" data-animate-effect="fadeIn">
-					<a href="#"><img src="images/project-1.jpg" alt="Free HTML5 Website Template by FreeHTML5.co" class="img-responsive">
+					<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/project-1.jpg" alt="Law Template" class="img-responsive">
 						<h3>Business</h3>
 						<span>CEO. Hon Doe</span>
 					</a>
 				</div>
 				<div class="col-md-4 col-sm-6 text-center fh5co-project animate-box" data-animate-effect="fadeIn">
-					<a href="#"><img src="images/project-2.jpg" alt="Free HTML5 Website Template by FreeHTML5.co" class="img-responsive">
+					<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/project-2.jpg" alt="Law Template" class="img-responsive">
 						<h3>Legal Advice</h3>
 						<span>Atty. John Doe</span>
 					</a>
 				</div>
 				<div class="col-md-4 col-sm-6 text-center fh5co-project animate-box" data-animate-effect="fadeIn">
-					<a href="#"><img src="images/project-3.jpg" alt="Free HTML5 Website Template by FreeHTML5.co" class="img-responsive">
+					<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/project-3.jpg" alt="Law Template" class="img-responsive">
 						<h3>Read Bible</h3>
 						<span>Ptr. Jhon Doe</span>
 					</a>
 				</div>
 				<div class="col-md-4 col-sm-6 text-center fh5co-project animate-box" data-animate-effect="fadeIn">
-					<a href="#"><img src="images/project-4.jpg" alt="Free HTML5 Website Template by FreeHTML5.co" class="img-responsive">
+					<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/project-4.jpg" alt="Law Template" class="img-responsive">
 						<h3>Affidavit</h3>
 						<span>Atty. Boo Doe</span>
 					</a>
 				</div>
 				<div class="col-md-4 col-sm-6 text-center fh5co-project animate-box" data-animate-effect="fadeIn">
-					<a href="#"><img src="images/project-5.jpg" alt="Free HTML5 Website Template by FreeHTML5.co" class="img-responsive">
+					<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/project-5.jpg" alt="Law Template" class="img-responsive">
 						<h3>Sports</h3>
 						<span>Atty. Smith D</span>
 					</a>
 				</div>
 				<div class="col-md-4 col-sm-6 text-center fh5co-project animate-box" data-animate-effect="fadeIn">
-					<a href="#"><img src="images/project-6.jpg" alt="Free HTML5 Website Template by FreeHTML5.co" class="img-responsive">
+					<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/project-6.jpg" alt="Law Template" class="img-responsive">
 						<h3>Photography</h3>
 						<span>Phtr. Arnt Tee</span>
 					</a>
@@ -332,7 +329,7 @@
 							<div class="item">
 								<div class="testimony-slide active text-center">
 									<figure>
-										<img src="images/user-1.jpg" alt="user">
+										<img src="<?php echo get_template_directory_uri(); ?>/assets/images/user-1.jpg" alt="user">
 									</figure>
 									<span>Jean Doe, via <a href="#" class="twitter">Twitter</a></span>
 									<blockquote>
@@ -343,7 +340,7 @@
 							<div class="item">
 								<div class="testimony-slide active text-center">
 									<figure>
-										<img src="images/user-1.jpg" alt="user">
+										<img src="<?php echo get_template_directory_uri(); ?>/assets/images/user-1.jpg" alt="user">
 									</figure>
 									<span>John Doe, via <a href="#" class="twitter">Twitter</a></span>
 									<blockquote>
@@ -354,7 +351,7 @@
 							<div class="item">
 								<div class="testimony-slide active text-center">
 									<figure>
-										<img src="images/user-1.jpg" alt="user">
+										<img src="<?php echo get_template_directory_uri(); ?>/assets/images/user-1.jpg" alt="user">
 									</figure>
 									<span>John Doe, via <a href="#" class="twitter">Twitter</a></span>
 									<blockquote>
@@ -370,7 +367,7 @@
 	</div>
 
 	<div id="fh5co-consult">
-		<div class="video fh5co-video" style="background-image: url(images/video.jpg);">
+		<div class="video fh5co-video" style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/video.jpg);">
 		</div>
 		<div class="choose animate-box">
 			<div class="fh5co-heading">
@@ -427,7 +424,7 @@
 			<div class="row">
 				<div class="col-lg-4 col-md-4">
 					<div class="fh5co-blog animate-box">
-						<a href="#"><img class="img-responsive" src="images/project-4.jpg" alt=""></a>
+						<a href="#"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/project-4.jpg" alt=""></a>
 						<div class="blog-text">
 							<span class="posted_on">Nov. 15th</span>
 							<span class="comment"><a href="">21<i class="icon-speech-bubble"></i></a></span>
@@ -439,7 +436,7 @@
 				</div>
 				<div class="col-lg-4 col-md-4">
 					<div class="fh5co-blog animate-box">
-						<a href="#"><img class="img-responsive" src="images/project-2.jpg" alt=""></a>
+						<a href="#"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/project-2.jpg" alt=""></a>
 						<div class="blog-text">
 							<span class="posted_on">Nov. 15th</span>
 							<span class="comment"><a href="">21<i class="icon-speech-bubble"></i></a></span>
@@ -451,7 +448,7 @@
 				</div>
 				<div class="col-lg-4 col-md-4">
 					<div class="fh5co-blog animate-box">
-						<a href="#"><img class="img-responsive" src="images/project-3.jpg" alt=""></a>
+						<a href="#"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/project-3.jpg" alt=""></a>
 						<div class="blog-text">
 							<span class="posted_on">Nov. 15th</span>
 							<span class="comment"><a href="">21<i class="icon-speech-bubble"></i></a></span>
@@ -476,7 +473,7 @@
 			<div class="row">
 				<div class="col-md-4 col-sm-4 text-center animate-box" data-animate-effect="fadeIn">
 					<div class="fh5co-staff">
-						<img src="images/user-2.jpg" alt="Free HTML5 Templates by gettemplates.co">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/user-2.jpg" alt="Free HTML5 Templates by gettemplate.com">
 						<h3>Jean Smith</h3>
 						<strong class="role">Counsel</strong>
 						<p>Quos quia provident consequuntur culpa facere ratione maxime commodi voluptates id repellat velit eaque aspernatur expedita. Possimus itaque adipisci.</p>
@@ -490,7 +487,7 @@
 				</div>
 				<div class="col-md-4 col-sm-4 text-center animate-box" data-animate-effect="fadeIn">
 					<div class="fh5co-staff">
-						<img src="images/user-2.jpg" alt="Free HTML5 Templates by gettemplates.co">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/user-2.jpg" alt="Free HTML5 Templates by gettemplate.com">
 						<h3>Hush Raven</h3>
 						<strong class="role">Head of International Practice</strong>
 						<p>Quos quia provident consequuntur culpa facere ratione maxime commodi voluptates id repellat velit eaque aspernatur expedita. Possimus itaque adipisci.</p>
@@ -504,7 +501,7 @@
 				</div>
 				<div class="col-md-4 col-sm-4 text-center animate-box" data-animate-effect="fadeIn">
 					<div class="fh5co-staff">
-						<img src="images/user-2.jpg" alt="Free HTML5 Templates by gettemplates.co">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/user-2.jpg" alt="Free HTML5 Templates by gettemplate.com">
 						<h3>Alex King</h3>
 						<strong class="role">Managing Partner, Attorney</strong>
 						<p>Quos quia provident consequuntur culpa facere ratione maxime commodi voluptates id repellat velit eaque aspernatur expedita. Possimus itaque adipisci.</p>
@@ -520,7 +517,7 @@
 		</div>
 	</div>
 
-	<div id="fh5co-started" style="background-image:url(images/img_bg_2.jpg);">
+	<div id="fh5co-started" style="background-image:url(<?php echo get_template_directory_uri(); ?>/assets/images/img_bg_2.jpg);">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row animate-box">
@@ -601,6 +598,7 @@
 		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
 	</div>
 
+    <?php wp_footer(); ?>
 	</body>
 </html>
 
