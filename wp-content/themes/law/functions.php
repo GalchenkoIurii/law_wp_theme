@@ -208,3 +208,7 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+/**
+ * TGM plugin
+ */
+require_once get_template_directory() . '/inc/tgm/tgm.php';
