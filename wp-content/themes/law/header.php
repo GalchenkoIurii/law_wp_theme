@@ -14,45 +14,61 @@
 <html <?php language_attributes(); ?>>
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Law &mdash;</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Law Website Template" />
+    <meta name="keywords" content="template, html5, css3, mobile first, responsive" />
+    <meta name="author" content="" />
 
-	<?php wp_head(); ?>
+
+    <!-- Facebook and Twitter integration -->
+    <meta property="og:title" content=""/>
+    <meta property="og:image" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:site_name" content=""/>
+    <meta property="og:description" content=""/>
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:image" content="" />
+    <meta name="twitter:url" content="" />
+    <meta name="twitter:card" content="" />
+
+    <?php wp_head(); ?>
 </head>
-
 <body <?php body_class(); ?>>
-<div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'law' ); ?></a>
 
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$law_description = get_bloginfo( 'description', 'display' );
-			if ( $law_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $law_description; /* WPCS: xss ok. */ ?></p>
-			<?php endif; ?>
-		</div><!-- .site-branding -->
+<div class="fh5co-loader"></div>
 
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'law' ); ?></button>
-			<?php
-			wp_nav_menu( array(
-				'theme_location' => 'menu-1',
-				'menu_id'        => 'primary-menu',
-			) );
-			?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
+<div id="page">
+    <nav class="fh5co-nav" role="navigation">
+        <div class="top-menu">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-2">
+                        <div id="fh5co-logo"><a href="index.html">Law<span>.</span></a></div>
+                    </div>
+                    <div class="col-xs-10 text-right menu-1">
+                        <ul>
+                            <li class="active"><a href="index.html">Home</a></li>
+                            <li><a href="practice.html">Practice Areas</a></li>
+                            <li><a href="won.html">Won Cases</a></li>
+                            <li class="has-dropdown">
+                                <a href="blog.html">Blog</a>
+                                <ul class="dropdown">
+                                    <li><a href="#">Web Design</a></li>
+                                    <li><a href="#">eCommerce</a></li>
+                                    <li><a href="#">Branding</a></li>
+                                    <li><a href="#">API</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li class="btn-cta"><a href="#"><span>Login</span></a></li>
+                            <li class="btn-cta"><a href="#"><span>Sign Up</span></a></li>
+                        </ul>
+                    </div>
+                </div>
 
-	<div id="content" class="site-content">
+            </div>
+        </div>
+    </nav>
